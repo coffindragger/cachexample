@@ -1,0 +1,19 @@
+{%extends "base.html"%}
+
+{%block body%}
+<h2>Title: {{book.name}}</h2>
+<h3>Author: {{book.cached_author}}</h3>
+<h3>Category: {{book.cached_category}}</h3>
+
+<h4>Related Books</h4>
+<ul>
+{%for related in book.related_books%}
+    <li>
+        <p><a href="{{related.get_absolute_url}}">{{related.name}}</a></p>
+        <p class="author">{{related.cached_author}}</p>
+        <p>{{related.cached_category}}</p>
+    </li>
+{%endfor%}
+</ul>
+
+{%endblock%}

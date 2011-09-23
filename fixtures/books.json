@@ -1,0 +1,82 @@
+[
+  {
+    "pk": 1, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Horror", 
+      "slug": "horror"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Drama", 
+      "slug": "drama"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "cachexample.author", 
+    "fields": {
+      "bio": "He's a man.", 
+      "name": "John Wilkson"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "cachexample.author", 
+    "fields": {
+      "bio": "asdf", 
+      "name": "Sue Jones"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "cachexample.book", 
+    "fields": {
+      "category": 1, 
+      "name": "Foo the Bar Baz", 
+      "author": 1, 
+      "is_active": true, 
+      "popularity": 0, 
+      "slug": "foobar"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "cachexample.book", 
+    "fields": {
+      "category": 1, 
+      "name": "Wee Willy Winky", 
+      "author": 1, 
+      "is_active": true, 
+      "popularity": 0, 
+      "slug": "wee-willy-winky"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "cachexample.book", 
+    "fields": {
+      "category": 1, 
+      "name": "Bar Baz Meets Frankenstein", 
+      "author": 2, 
+      "is_active": true, 
+      "popularity": 0, 
+      "slug": "barbaz"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "cachexample.book", 
+    "fields": {
+      "category": 2, 
+      "name": "Quux goes to market", 
+      "author": 1, 
+      "is_active": true, 
+      "popularity": 0, 
+      "slug": "quux"
+    }
+  }
+]
