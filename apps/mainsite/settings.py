@@ -9,7 +9,6 @@ if APPS_DIR not in sys.path:
 
 from mainsite import TOP_DIR
 
-
 INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -19,7 +18,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.admin',
 
-    'debug_toolbar',
     'mainsite',
     'cachexample',
 ]
@@ -55,20 +53,19 @@ STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 ]
 
+
 STATICFILES_DIRS = [
-    os.path.join(TOP_DIR, 'media'),
 ]
 
-SECRET_KEY = ''
-
-
-MEDIA_ROOT = os.path.join(TOP_DIR, 'media')
-MEDIA_URL = '/media/'
-
 STATIC_ROOT = os.path.join(TOP_DIR, 'static')
+MEDIA_ROOT = os.path.join(TOP_DIR, 'uploads')
+MEDIA_URL = '/media/'
 STATIC_URL = '/static/'
+ADMIN_MEDIA_PREFIX = STATIC_URL+'admin/'
 
-ADMIN_MEDIA_PREFIX = '/static/admin/'
+
+
+
 
 ROOT_URLCONF = 'mainsite.urls'
 
@@ -80,6 +77,8 @@ SITE_ID = 1
 
 USE_I18N = True
 USE_L10N = True
+
+
 
 LOGGING = {
     'version': 1,
@@ -101,9 +100,9 @@ LOGGING = {
 
 
 
+
 # try to import local_settings if present
 try:
     from local_settings import *
 except ImportError as e:
-    print(e)
     pass
