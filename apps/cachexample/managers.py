@@ -3,7 +3,7 @@ from cachemodel import models as cachemodels
 
 
 class BookManager(cachemodels.CacheModelManager):
-    @cachemodels.cached_query
+    @cachemodels.cached_method
     def cached_listings(self, category=None, page=1, limit=10):
         qs = self.all()
         if category:
@@ -11,6 +11,6 @@ class BookManager(cachemodels.CacheModelManager):
         offset = (page-1)*limit
         return qs[offset:offset+limit]
 
-    @cachemodels.cached_query
+    @cachemodels.cached_method
     def popular(self, limit=5):
-        return self.filter(is_active=True).order_by('-denorm_popularity')[:limit]
+        return self.filter(is_active=True).order_by('-popularity')[:limit]

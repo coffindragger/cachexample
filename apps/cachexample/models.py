@@ -1,10 +1,10 @@
 from django.db import models
-#from cachexample.managers import BookManager
+from cachexample.managers import BookManager
 from cachemodel import models as cachemodels
 
 
-#class Category(cachemodels.CachedTable):
-class Category(models.Model):
+class Category(cachemodels.CacheModel):
+#class Category(models.Model):
     name = models.CharField(max_length=1024)
     slug = models.SlugField()
     def __unicode__(self):
@@ -27,7 +27,7 @@ class Book(cachemodels.CacheModel):
     author = models.ForeignKey(Author)
     category = models.ForeignKey(Category)
     popularity = models.IntegerField(default=0, editable=False)
-    #objects = BookManager()
+    objects = BookManager()
 
     def __unicode__(self):
         return self.name
@@ -48,8 +48,8 @@ class Book(cachemodels.CacheModel):
 
 
 
-#class Comment(cachemodels.CacheModel):
-class Comment(models.Model):
+class Comment(cachemodels.CacheModel):
+#class Comment(models.Model):
     book = models.ForeignKey(Book)
     body = models.TextField()
 

@@ -1,6 +1,6 @@
 {%extends "base.html"%}
 
-{%block body%}
+{%block content%}
 <h2>Title: {{book.name}}</h2>
 <h3>Author: {{book.cached_author}}</h3>
 <h3>Category: {{book.cached_category}}</h3>
@@ -16,4 +16,10 @@
 {%endfor%}
 </ul>
 
+{%endblock%}
+
+{%block post_content%}
+
+<h5>Popular Books</h5>
+{{POPULAR_BOOKS}}
 {%endblock%}
