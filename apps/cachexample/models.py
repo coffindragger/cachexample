@@ -32,6 +32,12 @@ class Book(cachemodels.CacheModel):
     def __unicode__(self):
         return self.name
 
+    def warm_cache(self):
+        super(Book, self).warm_cache()
+        self.author_cached
+        self.category_cached
+        self.related_books() # make sure related books query is warmed
+
     @models.permalink
     def get_absolute_url(self):
         return ('book_detail', [], {'slug': self.slug})

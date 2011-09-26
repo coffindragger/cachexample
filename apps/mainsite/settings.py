@@ -19,6 +19,8 @@ INSTALLED_APPS = [
     'django.contrib.admin',
 
     'mainsite',
+    'cachemodel',
+
     'cachexample',
 ]
 

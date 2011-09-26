@@ -2,5 +2,5 @@ from cachexample.models import Book
 
 def popular_books(request):
     return {
-        'POPULAR_BOOKS': Book.objects.popular(limit=5),
+        'POPULAR_BOOKS': Book.objects.popular(),
     }
