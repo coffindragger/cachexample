@@ -3,7 +3,7 @@ from cachexample.managers import BookManager
 from cachemodel import models as cachemodels
 
 
-class Category(cachemodels.CacheModel):
+class Category(cachemodels.CachedTable):
 #class Category(models.Model):
     name = models.CharField(max_length=1024)
     slug = models.SlugField()
@@ -35,7 +35,6 @@ class Book(cachemodels.CacheModel):
     def warm_cache(self):
         super(Book, self).warm_cache()
         self.author_cached
-        self.category_cached
         self.related_books() # make sure related books query is warmed
 
     @models.permalink

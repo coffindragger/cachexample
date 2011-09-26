@@ -11,6 +11,12 @@
   <body>
     {%block body%}
 
+    <div id="nav">
+      {%for category in CATEGORIES%}
+      <a href="{{category.get_absolute_url}}">{{category}}</a>
+      {%endfor%}
+    </div>
+
       {%block pre_content%}{%endblock pre_content%}
 
       {%block content%}{%endblock content%}

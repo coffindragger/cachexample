@@ -43,6 +43,7 @@ TEMPLATE_CONTEXT_PROCESSORS = [
     'django.contrib.messages.context_processors.messages',
 
     'cachexample.context_processors.popular_books',
+    'cachexample.context_processors.categories',
 ]
 
 
