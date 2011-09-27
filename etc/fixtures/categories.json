@@ -1,0 +1,506 @@
+[
+  {
+    "pk": 1, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Action and Adventure", 
+      "slug": "action-and-adventure"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Chick Lit", 
+      "slug": "chick-lit"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Childrens", 
+      "slug": "childrens"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Commercial Fiction", 
+      "slug": "commercial-fiction"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Contemporary", 
+      "slug": "contemporary"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Crime", 
+      "slug": "crime"
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Erotica", 
+      "slug": "erotica"
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Family Saga", 
+      "slug": "family-saga"
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Fantasy", 
+      "slug": "fantasy"
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Gay and Lesbian", 
+      "slug": "gay-and-lesbian"
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "General Fiction", 
+      "slug": "general-fiction"
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Graphic Novels", 
+      "slug": "graphic-novels"
+    }
+  }, 
+  {
+    "pk": 13, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Historical Fiction", 
+      "slug": "historical-fiction"
+    }
+  }, 
+  {
+    "pk": 14, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Horror", 
+      "slug": "horror"
+    }
+  }, 
+  {
+    "pk": 15, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Humour", 
+      "slug": "humour"
+    }
+  }, 
+  {
+    "pk": 16, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Literary Fiction", 
+      "slug": "literary-fiction"
+    }
+  }, 
+  {
+    "pk": 17, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Military and Espionage", 
+      "slug": "military-and-espionage"
+    }
+  }, 
+  {
+    "pk": 18, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Multicultural", 
+      "slug": "multicultural"
+    }
+  }, 
+  {
+    "pk": 19, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Mystery", 
+      "slug": "mystery"
+    }
+  }, 
+  {
+    "pk": 20, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Offbeat or Quirky", 
+      "slug": "offbeat-or-quirky"
+    }
+  }, 
+  {
+    "pk": 21, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Picture Books", 
+      "slug": "picture-books"
+    }
+  }, 
+  {
+    "pk": 22, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Religious and Inspirational", 
+      "slug": "religious-and-inspirational"
+    }
+  }, 
+  {
+    "pk": 23, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Romance", 
+      "slug": "romance"
+    }
+  }, 
+  {
+    "pk": 24, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Science Fiction", 
+      "slug": "science-fiction"
+    }
+  }, 
+  {
+    "pk": 25, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Short Story Collections", 
+      "slug": "short-story-collections"
+    }
+  }, 
+  {
+    "pk": 26, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Thrillers and Suspense", 
+      "slug": "thrillers-and-suspense"
+    }
+  }, 
+  {
+    "pk": 27, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Western", 
+      "slug": "western"
+    }
+  }, 
+  {
+    "pk": 28, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Womens Fiction", 
+      "slug": "womens-fiction"
+    }
+  }, 
+  {
+    "pk": 29, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Young Adult", 
+      "slug": "young-adult"
+    }
+  }, 
+  {
+    "pk": 30, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Non-Fiction Genre List", 
+      "slug": "non-fiction-genre-list"
+    }
+  }, 
+  {
+    "pk": 31, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Art & Photography", 
+      "slug": "art-photography"
+    }
+  }, 
+  {
+    "pk": 32, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Biography & Memoirs", 
+      "slug": "biography-memoirs"
+    }
+  }, 
+  {
+    "pk": 33, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Business & Finance", 
+      "slug": "business-finance"
+    }
+  }, 
+  {
+    "pk": 34, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Celebrity & Pop Culture", 
+      "slug": "celebrity-pop-culture"
+    }
+  }, 
+  {
+    "pk": 35, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Music Film & Entertainment,", 
+      "slug": "music-film-entertainment"
+    }
+  }, 
+  {
+    "pk": 36, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Cookbooks", 
+      "slug": "cookbooks"
+    }
+  }, 
+  {
+    "pk": 37, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Cultural/Social Issues", 
+      "slug": "culturalsocial-issues"
+    }
+  }, 
+  {
+    "pk": 38, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Current Affairs & Politics", 
+      "slug": "current-affairs-politics"
+    }
+  }, 
+  {
+    "pk": 39, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Food & Lifestyle", 
+      "slug": "food-lifestyle"
+    }
+  }, 
+  {
+    "pk": 40, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Gardening", 
+      "slug": "gardening"
+    }
+  }, 
+  {
+    "pk": 41, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Gay & Lesbian", 
+      "slug": "gay-lesbian"
+    }
+  }, 
+  {
+    "pk": 42, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "General Non-Fiction", 
+      "slug": "general-non-fiction"
+    }
+  }, 
+  {
+    "pk": 43, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "History & Military", 
+      "slug": "history-military"
+    }
+  }, 
+  {
+    "pk": 44, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Home Decorating & Design", 
+      "slug": "home-decorating-design"
+    }
+  }, 
+  {
+    "pk": 45, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "How To", 
+      "slug": "how-to"
+    }
+  }, 
+  {
+    "pk": 46, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Humour & Gift Books", 
+      "slug": "humour-gift-books"
+    }
+  }, 
+  {
+    "pk": 47, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Journalism", 
+      "slug": "journalism"
+    }
+  }, 
+  {
+    "pk": 48, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Juvenile", 
+      "slug": "juvenile"
+    }
+  }, 
+  {
+    "pk": 49, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Medical Health & Fitness,", 
+      "slug": "medical-health-fitness"
+    }
+  }, 
+  {
+    "pk": 50, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Narrative", 
+      "slug": "narrative"
+    }
+  }, 
+  {
+    "pk": 51, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Nature & Ecology", 
+      "slug": "nature-ecology"
+    }
+  }, 
+  {
+    "pk": 52, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Parenting", 
+      "slug": "parenting"
+    }
+  }, 
+  {
+    "pk": 53, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Pets", 
+      "slug": "pets"
+    }
+  }, 
+  {
+    "pk": 54, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Psychology", 
+      "slug": "psychology"
+    }
+  }, 
+  {
+    "pk": 55, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Reference", 
+      "slug": "reference"
+    }
+  }, 
+  {
+    "pk": 56, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Relationship & Dating", 
+      "slug": "relationship-dating"
+    }
+  }, 
+  {
+    "pk": 57, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Religion & Spirituality", 
+      "slug": "religion-spirituality"
+    }
+  }, 
+  {
+    "pk": 58, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Science & Technology", 
+      "slug": "science-technology"
+    }
+  }, 
+  {
+    "pk": 59, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Self-Help", 
+      "slug": "self-help"
+    }
+  }, 
+  {
+    "pk": 60, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Sports", 
+      "slug": "sports"
+    }
+  }, 
+  {
+    "pk": 61, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Travel", 
+      "slug": "travel"
+    }
+  }, 
+  {
+    "pk": 62, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "True Adventure & True Crime", 
+      "slug": "true-adventure-true-crime"
+    }
+  }, 
+  {
+    "pk": 63, 
+    "model": "cachexample.category", 
+    "fields": {
+      "name": "Womens Issues", 
+      "slug": "womens-issues"
+    }
+  }
+]
