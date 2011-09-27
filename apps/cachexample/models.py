@@ -43,7 +43,7 @@ class Book(cachemodels.CacheModel):
 
     @cachemodels.cached_method
     def related_books(self, how_many=5):
-        return Book.objects.filter(models.Q(category=self.category) | models.Q(author=self.author)).exclude(pk=self.pk)
+        return Book.objects.filter(models.Q(category=self.category_cached) | models.Q(author=self.author_cached)).exclude(pk=self.pk)
 
     @cachemodels.denormalized_field('popularity')
     def calc_popularity(self):
