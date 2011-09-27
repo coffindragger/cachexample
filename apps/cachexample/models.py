@@ -1,6 +1,7 @@
 from django.db import models
-from cachexample.managers import BookManager
 from cachemodel import models as cachemodels
+
+from cachexample.managers import *
 
 
 class Category(cachemodels.CachedTable):
@@ -19,6 +20,8 @@ class Author(cachemodels.CacheModel):
 #class Author(models.Model):
     name = models.CharField(max_length=1024)
     bio = models.TextField()
+    objects = AuthorManager()
+
     def __unicode__(self):
         return self.name
 
@@ -47,7 +50,7 @@ class Book(cachemodels.CacheModel):
 
     @cachemodels.cached_method
     def related_books(self, how_many=5):
-        return Book.objects.filter(models.Q(category=self.category_cached) | models.Q(author=self.author_cached)).exclude(pk=self.pk)
+        return Book.objects.filter(models.Q(category=self.category_cached) | models.Q(author=self.author_cached)).exclude(pk=self.pk)[:how_many]
 
     @cachemodels.denormalized_field('popularity')
     def calc_popularity(self):
