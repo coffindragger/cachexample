@@ -18,8 +18,16 @@
 
 {%endblock%}
 
+
+
 {%block post_content%}
 
-<h5>Popular Books</h5>
-{{POPULAR_BOOKS}}
+    <h5>Popular Books</h5>
+
+    {%for pop in POPULAR_BOOKS%}
+        <div style="float: left; border: 1px dotted black; margin: 1em; padding: 0.5em">
+            <p>{{pop.name}}</p>
+            <p>{{pop.author_cached}}</p>
+        </div>
+    {%endfor%}
 {%endblock%}

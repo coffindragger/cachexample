@@ -20,6 +20,7 @@ INSTALLED_APPS = [
 
     'mainsite',
     'cachemodel',
+    'djcelery',
 
     'cachexample',
 ]
@@ -103,6 +104,10 @@ LOGGING = {
     }
 }
 
+
+
+import djcelery
+djcelery.setup_loader()
 
 
 
