@@ -7,7 +7,7 @@ class BookManager(cachemodels.CacheModelManager):
     def listings_cached(self, category=None, page=1, limit=10):
         qs = self.all()
         if category:
-            qs.filter(category=category)
+            qs = qs.filter(category=category)
         offset = (page-1)*limit
         return qs[offset:offset+limit]
 
@@ -22,8 +22,8 @@ class BookManager(cachemodels.CacheModelManager):
         self.popular()
 
         # 'foobar' is a popular book, always cache it
-        foobar = self.get_cached(slug='foobar')
-        foobar.warm_cache()
+        #foobar = self.get_cached(slug='foobar')
+        #foobar.warm_cache()
 
         # warm the first 3 pages of listings for each category
         from cachexample.models import Category

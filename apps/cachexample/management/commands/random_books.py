@@ -29,4 +29,5 @@ class Command(BaseCommand):
                 is_active = True,
                 category = random.sample(all_categories, 1)[0],
             )
+            book.save()
             print book
